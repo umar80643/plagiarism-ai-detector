@@ -1,0 +1,15 @@
+# Optional: only needed if EMBEDDING_BACKEND=sentence_transformer,
+# RERANKER_BACKEND=cross_encoder, and/or AI_DETECTOR_BACKEND=transformer
+# (see config.py). Not in requirements.txt because these pull in PyTorch
+# (~2-3GB with CUDA deps on some platforms) -- no reason to force that on
+# users of the default, fully-offline TF-IDF+LSA / heuristic backends.
+#
+# Install with: pip install -r requirements-semantic.txt
+sentence-transformers>=3.0,<6
+transformers>=4.40,<5
+torch>=2.2,<3
+
+# Only needed for train_transformer_ai_detector.py (fine-tuning), not for
+# inference via TransformerDetector.
+datasets>=2.19,<4
+accelerate>=0.30,<2

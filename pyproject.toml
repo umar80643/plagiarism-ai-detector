@@ -1,0 +1,12 @@
+[project]
+name = "plagiarism-ai-detector"
+version = "5.0.0"
+description = "Corpus-based plagiarism detection (FAISS + pluggable embeddings/reranking) and pluggable AI-text detection (heuristic/sklearn/transformer), served via a FastAPI backend with a Streamlit UI"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "live_model: needs to download real HF model weights; excluded by default, run with -m live_model",
+]
+addopts = "-m 'not live_model'"

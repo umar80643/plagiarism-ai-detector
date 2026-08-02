@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+models/artifacts/
+.streamlit/
+data/ai_ga_dataset.csv
+.idea/
+data/AI_Human.csv
+data/AI_Human_fixed.csv

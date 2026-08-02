@@ -1,0 +1,8 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+models/artifacts/
+data/ai_ga_dataset.csv
+.git/
