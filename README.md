@@ -6,7 +6,7 @@ second rebuild of an earlier project — the first rebuild fixed the core
 conceptual bugs (see below); this pass moves it from "single-script demo"
 toward the shape a real backend service would take: a real embedding index,
 a real held-out evaluation on a real dataset, an authenticated/rate-limited
-API, and containerized deployment.
+API, and containerized deployment. 
 
 ## What changed, and why, across both rebuilds
 
