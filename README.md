@@ -1,4 +1,4 @@
-# Plagiarism & AI Content Detector
+# Plagiarism & AI Content Detector 
 
 A corpus-based plagiarism checker and AI-text detector, served behind a
 versioned FastAPI backend with a thin Streamlit UI on top. This is the
